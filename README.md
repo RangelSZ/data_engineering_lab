@@ -13,7 +13,7 @@ As tecnologias utilizadas são:
 * **PostgreSQL:** Simula um banco de dados transacional (OLTP) de origem.
 * **ClickHouse:** Atua como nosso Data Warehouse analítico (OLAP) de alta velocidade.
 * **Apache Airflow:** Orquestra todo o pipeline, agendando e monitorando a execução das tarefas de ingestão de dados.
-* **dbt (Data Build Tool):** Ferramenta de transformação que será usada para criar modelos analíticos (marts) a partir dos dados brutos no ClickHouse.
+* **dbt (Data Build Tool):** Ferramenta de transformação que será usada para criar modelos analíticos a partir dos dados brutos no ClickHouse.
 
 Siga os passos abaixo para iniciar todo o ambiente localmente.
 
@@ -43,7 +43,7 @@ docker compose run --rm airflow-webserver python -c "from cryptography.fernet im
 ```
 
 ### 3. Iniciar os Serviços
-Com o Docker em execução, suba todos os contêineres em modo "detached" (segundo plano). O comando `--build` garante que as imagens customizadas sejam construídas.
+Com o Docker em execução, suba todos os contêineres em modo "detached". O comando `--build` garante que as imagens customizadas sejam construídas.
 
 ```bash
 docker compose up --build -d
