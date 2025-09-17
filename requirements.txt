@@ -1,0 +1,11 @@
+# requirements.txt
+
+# Bibliotecas para a DAG de ingestão
+pandas
+sqlalchemy
+psycopg2-binary
+clickhouse-driver
+
+# Bibliotecas para o dbt
+dbt-core
+dbt-clickhouse

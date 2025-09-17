@@ -1,0 +1,15 @@
+.env
+
+__pycache__/
+*.pyc
+
+venv/
+
+airflow-logs/
+
+postgres_data/
+clickhouse_data/
+
+.vscode/
+
+.DS_Store
